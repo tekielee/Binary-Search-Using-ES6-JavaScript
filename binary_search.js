@@ -2,7 +2,7 @@ function binarySearch(array, needle, low, high) {
 	if(high < low) {
 		return false;
 	}
-	let mid = parseInt((low + high)/2);
+	let mid = parseInt(Math.floor((low + high)/2));
 	if(array[mid] > needle) {
 		return binarySearch(array, needle, low, mid - 1);
 	} else if (array[mid] < needle){
